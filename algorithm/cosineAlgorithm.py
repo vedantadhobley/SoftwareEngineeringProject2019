@@ -3,7 +3,7 @@
 """
 Created on Sun Mar 17 15:31:37 2019
 
-@author: applemac
+@author: Alan Patel
 """
 
 import numpy as np # linear algebra
