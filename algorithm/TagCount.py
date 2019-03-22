@@ -1,5 +1,5 @@
-import time
-start = time.time()
+#import time
+#start = time.time()
 
 import pandas as pd
 import os
@@ -36,8 +36,8 @@ def NonZerolist(tagCount):#function that will eliminate zero count tags to speed
 total=NonZerolist(total)
 
 print(total) ##Test line
-end = time.time()
-print(end - start)
+#end = time.time()
+#print(end - start)
 ###The only issue with this implimentation
 #right now would have to be the it is brute force
 #the run time is too long
