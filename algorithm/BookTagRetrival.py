@@ -14,7 +14,7 @@ def BookRetriver(bookList):
         for i in BookTag:
             tagList.append(i)
     return tagList
-start=time.time()
+#start=time.time()
 myBooks=[1,6,45,2,325,8956,56,98,15,14,13,20]  
 print(BookRetriver(myBooks))  
 #end=time.time()
