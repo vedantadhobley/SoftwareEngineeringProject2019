@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-os.chdir("C:\\Users\\shazi\\Desktop\\Software Engine Project\\SoftwareEngineeringProject2019\\database")
+os.chdir("C:\\Users\\shazi\\Desktop\\SoftwareEngineeringProject2019\\database")
 
 def BookRetriver(bookList):
     #bookList has the goodreads number
@@ -14,8 +14,8 @@ def BookRetriver(bookList):
             tagList.append(i)
     return tagList
 
-#myBooks=[1,3] Testing 
-#print(BookRetriver(myBooks)) Testing 
+myBooks=[1,3]  
+print(BookRetriver(myBooks))  
 
 
 
