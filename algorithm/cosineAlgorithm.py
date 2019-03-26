@@ -114,5 +114,5 @@ def alpha_recommendations(title,title2,title3):
     book_indices = [i[0] for i in total]
     return titles.iloc[book_indices]
 
-alpha_recommendations("The Hobbit", "The Catcher in the Rye", "Romeo and Juliet")
+alpha_recommendations("Charlotte's Web", "Fifty Shades of Grey (Fifty Shades, #1)", "Guns, Germs, and Steel: The Fates of Human Societies")
 
