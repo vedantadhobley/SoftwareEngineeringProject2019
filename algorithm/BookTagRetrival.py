@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+#import time
 os.chdir("C:\\Users\\shazi\\Desktop\\SoftwareEngineeringProject2019\\database")
 
 def BookRetriver(bookList):
@@ -13,10 +14,11 @@ def BookRetriver(bookList):
         for i in BookTag:
             tagList.append(i)
     return tagList
-
-myBooks=[1,3]  
+start=time.time()
+myBooks=[1,6,45,2,325,8956,56,98,15,14,13,20]  
 print(BookRetriver(myBooks))  
-
+#end=time.time()
+#print(end-start)
 
 
 
