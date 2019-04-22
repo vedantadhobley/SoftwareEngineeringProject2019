@@ -133,7 +133,7 @@ def alpha_recommendations(title,title2,title3):
                     while count<53 and total[count][1]>=a:
                         if total[count][1]>=s:
                             while count<53 and total[count][1]>=s:
-                                S.append(total[count][1])
+                                S.append(total[count])
                                 count+=1
                         else:
                             A.append(total[count])
