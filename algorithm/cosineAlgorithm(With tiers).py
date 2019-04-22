@@ -111,8 +111,8 @@ def alpha_recommendations(title,title2,title3):
     #total = list( map(add, total, sim_scores3))
     total = sorted(total, key=lambda x: x[1], reverse=True)
     #total = total[1:21]
-    diff= total[3]-total[52]
-    Lower= total[52]
+    diff= total[3][1]-total[52][1]
+    Lower= total[52][1]
     s=Lower+(diff*.95)
     a= Lower+(diff*.85)
     b= Lower+(diff*.6)
@@ -127,13 +127,13 @@ def alpha_recommendations(title,title2,title3):
     C=[]
     count= 3
     while count<53 and total[count]>=c:
-        if total[count]>=b:
-            while count<53 and total[count]>=b:
-                if total[count]>=a:
-                    while count<53 and total[count]>=a:
-                        if total[count]>=s:
-                            while count<53 and total[count]>=s:
-                                S.append(total[count])
+        if total[count][1]>=b:
+            while count<53 and total[count][1]>=b:
+                if total[count][1]>=a:
+                    while count<53 and total[count][1]>=a:
+                        if total[count][1]>=s:
+                            while count<53 and total[count][1]>=s:
+                                S.append(total[count][1])
                                 count+=1
                         else:
                             A.append(total[count])
