@@ -126,7 +126,7 @@ def alpha_recommendations(title,title2,title3):
     B=[]
     C=[]
     count= 3
-    while count<53 and total[count]>=c:
+    while count<53 and total[count][1]>=c:
         if total[count][1]>=b:
             while count<53 and total[count][1]>=b:
                 if total[count][1]>=a:
